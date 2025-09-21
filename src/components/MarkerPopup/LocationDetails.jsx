@@ -5,6 +5,7 @@ import { isMobile } from 'react-device-detect';
 import { buttonStyleSmall } from '../../styles/buttonStyle';
 import { getContentAsString, mapCustomTypeToReactComponent } from './mapCustomTypeToReactComponent';
 import { ReportProblemForm } from './ReportProblemForm';
+import { ImageUpload } from './ImageUpload';
 
 import React, { useState } from 'react';
 
@@ -156,6 +157,7 @@ export const LocationDetailsBox = ({ place }) => {
                 {t('ReportIssueButton')}
             </p>
             {showForm && <ReportProblemForm placeId={place.metadata.uuid} />}
+            <ImageUpload placeId={place.metadata.uuid} />
         </React.Fragment>
     );
 };
