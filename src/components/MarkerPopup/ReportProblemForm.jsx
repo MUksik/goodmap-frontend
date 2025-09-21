@@ -39,23 +39,10 @@ const Select = styled.select`
     }
 `;
 
-const Input = styled.input`
-    padding: 5px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    transition: border-color 0.3s ease;
-
-    &:focus {
-        outline: none;
-        border-color: #007bff;
-        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-    }
-`;
 
 const SubmitButton = styled.input`
    padding: 12px;
-    background-color: #2c4f5b;
+    background-color: #2c4f5bff;
     color: white;
     border: none;
     border-radius: 8px;
@@ -70,6 +57,20 @@ const SubmitButton = styled.input`
 
     &:active {
         background-color: #103542ff;
+    }
+`;
+
+const Input = styled.input`
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+
+    &:focus {
+        outline: none;
+        border-color: #007bff;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
     }
 `;
 
